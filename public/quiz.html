@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Проверьте знания по основам кибербезопасности в бесплатном тесте CyberShield.">
+  <title>Тест по кибербезопасности — CyberShield</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <script src="/js/main.js" defer></script>
+  <script src="/js/quiz.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a><canvas class="network-canvas" aria-hidden="true"></canvas>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="/" aria-label="CyberShield — главная"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 2.5 27 7v8.4c0 7.2-4.7 11.8-11 14.1C9.7 27.2 5 22.6 5 15.4V7l11-4.5Z"/><path d="m11.5 16 3 3 6.5-7"/></svg></span><span>Cyber<span class="text-cyan">Shield</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="primary-nav" aria-label="Основная навигация"><a href="/">Главная</a><a href="/learning">Обучение</a><a class="active" href="/quiz">Тест</a><a class="nav-cta" href="/learning">Повторить темы <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="main" class="container page-main quiz-page">
+    <div class="breadcrumbs"><a href="/">Главная</a><span aria-hidden="true">/</span><span>Тест</span></div>
+    <section class="page-intro quiz-intro"><p class="eyebrow"><span class="status-dot"></span> ПРОВЕРКА ЗНАНИЙ</p><h1>Насколько ты<br><span class="gradient-text">киберграмотен?</span></h1><p>10 вопросов о цифровой безопасности. Выбирай ответ, а в конце посмотри результат и пояснения.</p></section>
+    <section class="quiz-shell glass-card" aria-live="polite">
+      <div class="quiz-start" id="quiz-start"><span class="quiz-emblem" aria-hidden="true">⌑</span><p class="eyebrow">МИНИ-ТЕСТ · 10 ВОПРОСОВ</p><h2>Начнём проверку?</h2><p>На каждый вопрос есть один правильный ответ. Результат сохраняется только в этом браузере.</p><p class="last-result" id="last-result" hidden></p><button class="button button-primary" id="start-quiz" type="button">Начать тест <span aria-hidden="true">→</span></button></div>
+      <div class="quiz-question" id="quiz-question" hidden>
+        <div class="quiz-meta"><span id="question-counter">ВОПРОС 1 / 10</span><span id="progress-percent">10%</span></div>
+        <div class="progress-track" role="progressbar" aria-label="Прогресс теста" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><span id="progress-bar"></span></div>
+        <h2 id="question-text" tabindex="-1"></h2>
+        <div class="answer-list" id="answer-list" role="group" aria-labelledby="question-text"></div>
+        <p class="answer-feedback" id="answer-feedback" aria-live="polite"></p>
+        <div class="quiz-controls"><button class="button button-secondary" id="quit-quiz" type="button">Выйти</button><button class="button button-primary" id="next-question" type="button" disabled>Следующий вопрос <span aria-hidden="true">→</span></button></div>
+      </div>
+      <div class="quiz-result" id="quiz-result" hidden><span class="result-badge" aria-hidden="true">✓</span><p class="eyebrow">ТЕСТ ЗАВЕРШЁН</p><h2 id="result-title" tabindex="-1">Хорошая работа!</h2><p class="result-score"><strong id="score-value">0</strong><span> из 10 правильных ответов</span></p><p class="result-message" id="result-message"></p><p class="result-saved">Результат сохранён в этом браузере.</p><div class="quiz-controls result-controls"><a class="button button-secondary" href="/learning">Повторить темы</a><button class="button button-primary" id="restart-quiz" type="button">Пройти заново <span aria-hidden="true">↻</span></button></div></div>
+    </section>
+    <p class="quiz-privacy">Результат не отправляется на сервер и доступен только в текущем браузере.</p>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="/" aria-label="CyberShield — главная"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 2.5 27 7v8.4c0 7.2-4.7 11.8-11 14.1C9.7 27.2 5 22.6 5 15.4V7l11-4.5Z"/><path d="m11.5 16 3 3 6.5-7"/></svg></span><span>Cyber<span class="text-cyan">Shield</span></span></a><p>Учись защищать то, что важно.</p><small>© <span data-year></span> CyberShield · Учебный проект</small></div></footer>
+</body>
+</html>

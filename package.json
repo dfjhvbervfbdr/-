@@ -1,0 +1,13 @@
+{
+  "name": "cybershield",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Образовательный сайт о кибербезопасности",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

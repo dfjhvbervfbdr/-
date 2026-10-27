@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="CyberShield — понятные уроки и тесты по кибербезопасности, защите данных и безопасному интернету.">
+  <title>CyberShield — защити свою цифровую жизнь</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <script src="/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <canvas class="network-canvas" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="CyberShield — главная">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 2.5 27 7v8.4c0 7.2-4.7 11.8-11 14.1C9.7 27.2 5 22.6 5 15.4V7l11-4.5Z"/><path d="m11.5 16 3 3 6.5-7"/></svg></span>
+        <span>Cyber<span class="text-cyan">Shield</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="primary-nav" aria-label="Основная навигация">
+        <a class="active" href="/">Главная</a>
+        <a href="/learning">Обучение</a>
+        <a href="/quiz">Тест</a>
+        <a class="nav-cta" href="/learning">Начать путь <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> ЦИФРОВАЯ ГРАМОТНОСТЬ ДЛЯ КАЖДОГО</p>
+        <h1>Защити свою<br><span class="gradient-text">цифровую жизнь</span></h1>
+        <p class="hero-lead">Разберись в киберугрозах, научись беречь личные данные и пользуйся интернетом увереннее — короткими уроками и практическими примерами.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="/learning">Начать обучение <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="/quiz"><span class="play-icon" aria-hidden="true">▸</span> Проверить знания</a>
+        </div>
+        <div class="hero-proof"><div class="proof-icon" aria-hidden="true">✦</div><p><strong>Понятно с нуля</strong><span>Практические советы без сложных терминов</span></p></div>
+      </div>
+      <div class="hero-visual" aria-label="Схематичное изображение защищённого цифрового пространства">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="shield-glow"></div>
+        <div class="hero-shield" aria-hidden="true"><svg viewBox="0 0 160 180"><path class="shield-outline" d="M80 8 143 32v47c0 42-25 72-63 91C42 151 17 121 17 79V32L80 8Z"/><path class="shield-inner" d="M80 22 130 41v38c0 33-19 57-50 73-31-16-50-40-50-73V41l50-19Z"/><path class="shield-check" d="m56 88 17 17 34-38"/></svg></div>
+        <span class="float-tag tag-encryption"><span>◈</span> ШИФРОВАНИЕ <i>АКТИВНО</i></span>
+        <span class="float-tag tag-firewall"><span>⌑</span> ЛИЧНЫЕ ДАННЫЕ <i>ЗАЩИЩЕНЫ</i></span>
+        <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
+        <span class="visual-caption">ТВОЯ БЕЗОПАСНОСТЬ НАЧИНАЕТСЯ С ТЕБЯ</span>
+      </div>
+      <a class="scroll-cue" href="#threats"><span></span> ЛИСТАЙТЕ НИЖЕ</a>
+    </section>
+
+    <section class="section container" id="threats">
+      <div class="section-heading"><div><p class="eyebrow">ЗНАЙ, ЧТО ТЕБЕ УГРОЖАЕТ</p><h2>Угрозы становятся понятнее</h2></div><a class="text-link" href="/learning">Все темы <span aria-hidden="true">↗</span></a></div>
+      <div class="threat-grid">
+        <article class="glass-card threat-card"><span class="card-icon icon-cyan" aria-hidden="true">⌁</span><p class="card-index">01 / ОБМАН</p><h3>Фишинг</h3><p>Поддельные письма и сайты выманивают пароли, коды и данные карты.</p><a href="/learning#phishing" aria-label="Изучить фишинг">Изучить тему <span aria-hidden="true">→</span></a></article>
+        <article class="glass-card threat-card"><span class="card-icon icon-violet" aria-hidden="true">⌘</span><p class="card-index">02 / ВРЕДОНОСНОЕ ПО</p><h3>Вирусы и трояны</h3><p>Нежелательные программы могут красть данные или мешать работе устройства.</p><a href="/learning#malware" aria-label="Изучить вредоносные программы">Изучить тему <span aria-hidden="true">→</span></a></article>
+        <article class="glass-card threat-card"><span class="card-icon icon-green" aria-hidden="true">◎</span><p class="card-index">03 / ДОСТУП</p><h3>Слабые пароли</h3><p>Повтор пароля на разных сайтах увеличивает риск потери аккаунтов.</p><a href="/learning#passwords" aria-label="Изучить безопасные пароли">Изучить тему <span aria-hidden="true">→</span></a></article>
+      </div>
+    </section>
+
+    <section class="vpn-feature container" id="vpn">
+      <div class="vpn-copy"><p class="eyebrow"><span class="status-dot green-dot"></span> БЕЗОПАСНОЕ СОЕДИНЕНИЕ</p><h2>VPN — приватный<br><span class="gradient-text">туннель в сети</span></h2><p>VPN шифрует трафик между вашим устройством и VPN-сервером. Узнайте, что именно он защищает и почему HTTPS всё равно важен.</p><a class="button button-secondary" href="/learning#vpn">Как работает VPN <span aria-hidden="true">→</span></a><p class="feature-note">Учебная версия сайта общедоступна. Здесь нет проверки VPN-подключения.</p></div>
+      <div class="vpn-diagram" role="img" aria-label="Схема: телефон соединяется с VPN-сервером, который соединяется с защищённым сайтом">
+        <div class="diagram-line"><span class="data-pulse"></span></div>
+        <div class="diagram-node"><span class="node-icon" aria-hidden="true">▯</span><strong>ТЕЛЕФОН</strong><small>ваше устройство</small></div>
+        <div class="diagram-node node-vpn"><span class="node-icon" aria-hidden="true">⬡</span><strong>VPN-СЕРВЕР</strong><small>шифрованный туннель</small></div>
+        <div class="diagram-node"><span class="node-icon" aria-hidden="true">◉</span><strong>ЗАЩИЩЁННЫЙ САЙТ</strong><small>HTTPS-соединение</small></div>
+        <div class="diagram-label">ЗАШИФРОВАННЫЙ ТРАФИК</div>
+      </div>
+    </section>
+
+    <section class="cta-strip container"><div><p class="eyebrow">ТВОЙ СЛЕДУЮЩИЙ ШАГ</p><h2>Готов проверить себя?</h2><p>10 вопросов помогут закрепить основы цифровой безопасности.</p></div><a class="button button-primary" href="/quiz">Пройти тест <span aria-hidden="true">→</span></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="/" aria-label="CyberShield — главная"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 2.5 27 7v8.4c0 7.2-4.7 11.8-11 14.1C9.7 27.2 5 22.6 5 15.4V7l11-4.5Z"/><path d="m11.5 16 3 3 6.5-7"/></svg></span><span>Cyber<span class="text-cyan">Shield</span></span></a><p>Учись защищать то, что важно.</p><small>© <span data-year></span> CyberShield · Учебный проект</small></div></footer>
+</body>
+</html>

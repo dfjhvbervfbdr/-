@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Изучайте основы кибербезопасности: персональные данные, пароли, фишинг, шифрование и VPN.">
+  <title>Обучение — CyberShield</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <script src="/js/main.js" defer></script>
+  <script src="/js/learning.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a><canvas class="network-canvas" aria-hidden="true"></canvas>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="/" aria-label="CyberShield — главная"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 2.5 27 7v8.4c0 7.2-4.7 11.8-11 14.1C9.7 27.2 5 22.6 5 15.4V7l11-4.5Z"/><path d="m11.5 16 3 3 6.5-7"/></svg></span><span>Cyber<span class="text-cyan">Shield</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="primary-nav" aria-label="Основная навигация"><a href="/">Главная</a><a class="active" href="/learning">Обучение</a><a href="/quiz">Тест</a><a class="nav-cta" href="/quiz">Проверить знания <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="main" class="container page-main">
+    <div class="breadcrumbs"><a href="/">Главная</a><span aria-hidden="true">/</span><span>Обучение</span></div>
+    <section class="page-intro"><p class="eyebrow"><span class="status-dot"></span> БИБЛИОТЕКА БЕЗОПАСНОСТИ</p><h1>Знания — твоя<br><span class="gradient-text">первая линия защиты</span></h1><p>Выбери тему и изучи основы цифровой безопасности. Короткие материалы, примеры и понятные действия на каждый день.</p></section>
+    <section class="learning-grid" aria-label="Учебные темы">
+      <article class="glass-card lesson-card" id="infosec"><div class="lesson-top"><span class="lesson-icon icon-cyan" aria-hidden="true">⌑</span><span class="lesson-number">01</span></div><p class="card-index">ОСНОВЫ</p><h2>Информационная безопасность</h2><p>Три принципа защиты данных и то, как они проявляются в повседневной жизни.</p><button class="text-button" type="button" data-lesson="infosec">Изучить тему <span aria-hidden="true">→</span></button></article>
+      <article class="glass-card lesson-card" id="privacy"><div class="lesson-top"><span class="lesson-icon icon-violet" aria-hidden="true">◉</span><span class="lesson-number">02</span></div><p class="card-index">ЛИЧНЫЕ ДАННЫЕ</p><h2>Персональные данные</h2><p>Какие сведения относятся к личным и как делиться ими осмотрительно.</p><button class="text-button" type="button" data-lesson="privacy">Изучить тему <span aria-hidden="true">→</span></button></article>
+      <article class="glass-card lesson-card" id="malware"><div class="lesson-top"><span class="lesson-icon icon-pink" aria-hidden="true">⌘</span><span class="lesson-number">03</span></div><p class="card-index">УГРОЗЫ</p><h2>Вредоносные программы</h2><p>Вирусы, трояны и программы-вымогатели: как они попадают на устройство.</p><button class="text-button" type="button" data-lesson="malware">Изучить тему <span aria-hidden="true">→</span></button></article>
+      <article class="glass-card lesson-card" id="phishing"><div class="lesson-top"><span class="lesson-icon icon-cyan" aria-hidden="true">⌁</span><span class="lesson-number">04</span></div><p class="card-index">СОЦИАЛЬНАЯ ИНЖЕНЕРИЯ</p><h2>Фишинг</h2><p>Распознавай подозрительные сообщения, ссылки и просьбы сообщить код.</p><button class="text-button" type="button" data-lesson="phishing">Изучить тему <span aria-hidden="true">→</span></button></article>
+      <article class="glass-card lesson-card" id="passwords"><div class="lesson-top"><span class="lesson-icon icon-green" aria-hidden="true">◎</span><span class="lesson-number">05</span></div><p class="card-index">УЧЁТНЫЕ ЗАПИСИ</p><h2>Безопасные пароли</h2><p>Создавай уникальные пароли, используй менеджер и включай второй фактор.</p><button class="text-button" type="button" data-lesson="passwords">Изучить тему <span aria-hidden="true">→</span></button></article>
+      <article class="glass-card lesson-card" id="encryption"><div class="lesson-top"><span class="lesson-icon icon-violet" aria-hidden="true">◈</span><span class="lesson-number">06</span></div><p class="card-index">ЗАЩИТА ДАННЫХ</p><h2>Шифрование</h2><p>Как шифрование превращает читаемые данные в текст, понятный только с ключом.</p><button class="text-button" type="button" data-lesson="encryption">Изучить тему <span aria-hidden="true">→</span></button></article>
+      <article class="glass-card lesson-card lesson-wide" id="vpn"><div class="lesson-top"><span class="lesson-icon icon-green" aria-hidden="true">⬡</span><span class="lesson-number">07</span></div><p class="card-index">СЕТЕВАЯ БЕЗОПАСНОСТЬ</p><h2>VPN и безопасный интернет</h2><p>Разбери путь трафика через VPN-сервер, роль шифрования и различия между VPN и HTTPS.</p><button class="text-button" type="button" data-lesson="vpn">Изучить тему <span aria-hidden="true">→</span></button></article>
+    </section>
+    <section class="learning-bottom"><div><p class="eyebrow">ЗАКРЕПИ МАТЕРИАЛ</p><h2>Готов проверить знания?</h2><p>Пройди короткий тест из десяти вопросов.</p></div><a class="button button-primary" href="/quiz">К тесту <span aria-hidden="true">→</span></a></section>
+  </main>
+  <dialog class="lesson-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="dialog-close" type="button" aria-label="Закрыть материал">×</button><p class="eyebrow" id="dialog-kicker"></p><h2 id="dialog-title"></h2><div class="dialog-content" id="dialog-content"></div><button class="button button-secondary dialog-return" type="button">Вернуться к темам</button></div></dialog>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="/" aria-label="CyberShield — главная"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 2.5 27 7v8.4c0 7.2-4.7 11.8-11 14.1C9.7 27.2 5 22.6 5 15.4V7l11-4.5Z"/><path d="m11.5 16 3 3 6.5-7"/></svg></span><span>Cyber<span class="text-cyan">Shield</span></span></a><p>Учись защищать то, что важно.</p><small>© <span data-year></span> CyberShield · Учебный проект</small></div></footer>
+</body>
+</html>
